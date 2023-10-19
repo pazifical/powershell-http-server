@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Powershell Webserver</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      main {
+        max-width: 1200px;
+        margin: auto;
+      }
+      div {
+        padding: 0.4rem 0;
+      }
+      label {
+        font-size: 0.8rem;
+        font-weight: bold;
+      }
+      input {
+        font-size: 1rem;
+      }
+      button,
+      input[type="submit"] {
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.5rem;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Powershell Webserver</h1>
+      <form action="/api/start" method="POST">
+        <div>
+          <label for="username">Username</label>
+          <br />
+          <input id="username" name="username" type="text" />
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <br />
+          <input id="password" name="password" type="password" />
+        </div>
+        <div>
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
